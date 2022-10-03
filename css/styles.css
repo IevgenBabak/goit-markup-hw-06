@@ -38,6 +38,7 @@ body {
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --time-cubic-bezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --modal-no-focus-color: rgba(33, 33, 33, 0.2);
+  --textarea-text-color: rgba(117, 117, 117, 0.5);
 }
 li {
   list-style-type: none;
@@ -742,4 +743,56 @@ textarea:focus {
   font-weight: 400;
   line-height: 1.71;
 }     
+.textarea-field {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--textarea-text-color);
+} 
+/* .check {
+  padding-left: 36.38px;
+
+} */
+.check-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* .check-box {
+  position: absolute;
+  margin-left:-24.38px;
+  fill: var(--second-black-color);
+} */
+
+
+.accept {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.checkbox {
+  border: 2px solid var(--second-black-color);
+  width: 16px;
+  height: 15px;
+  border-radius:2px;
+  display: flex;
+  align-items: center;
+  margin-right: 8.38px;
+  margin-left: 12px;
+}
+.icon-check {
+  fill: var(--brand-color);
+}
+.accept input:checked + label .checkbox {
+  background: var(--accent-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.checkbox-label {
+  display: flex;
+}
 

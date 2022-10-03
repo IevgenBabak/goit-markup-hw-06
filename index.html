@@ -471,7 +471,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop iss-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form action="" class="modal-form">
@@ -517,14 +517,34 @@
            <div class="form">   
           <label class="textarea-label" for="comment">Коментар</label>
             <textarea name="comment" id="comment"  placeholder="Введіть текст" class="textarea-field"></textarea>
-           </div>   
+           </div> 
+           
+           <div class="accept">
+            
+             <input type="checkbox" id="accept" name="accept" class="check-input"> 
+              
+              <label for="accept" class="checkbox-label">
+                <div class="checkbox">
+                <svg class="icon-check" width="16px" height="15px">
+            <!-- <use class="icon-vector" href="./images/sprite.svg#icon-vector"></use> -->
+            <use class="icon-vector-check" href="./images/sprite.svg#icon-vector-check"></use>
+          </svg>
+              </div>
+              Погоджуюся з розсилкою та приймаю 
+              <a href="*" class="contract">Умови договору</a></label> 
+           </div>
           
-
-          <div class="accept">
-            <input type="checkbox" id="accept" name="accept">
-            <label for="accept"><span class="accept-label"></span>Погоджуюся з розсилкою та приймаю 
+            
+          <!-- <div class="accept">
+            
+            <label class="check"><span class="accept-label"><input type="checkbox" class="check-input" name="accept"></span><span class="check-box">
+              <svg class="icon-check" width="16px" height="15px">
+            <use class="icon-vector" href="./images/sprite.svg#icon-vector"></use>
+            <use class="icon-vector-check" href="./images/sprite.svg#icon-vector-check"></use>
+          </svg>
+            </span>Погоджуюся з розсилкою та приймаю 
               <a href="*" class="contract">Умови договору</a></span></label>
-          </div>
+          </div> -->
             
           <button type="submit" class="submit-btn">Відправити</button>
 
