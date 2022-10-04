@@ -719,8 +719,8 @@ nav.container {
   border-radius: 4px;
 }
 .contract {
+  margin-left: 6px;
   color: var(--accent-color);
-  text-decoration-line: underline;
   text-decoration: none;
   text-decoration: underline;
 }
