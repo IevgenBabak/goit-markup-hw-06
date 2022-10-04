@@ -613,8 +613,10 @@ nav.container {
   position: relative;
 }
 .input-modal {
+  position: relative;
   display: flex;
   align-items: center;
+  margin-top: 4px;
 
 }
 .form-element svg {
@@ -751,6 +753,9 @@ textarea:focus {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+.form-label {
+  margin-bottom: 4px;
 }
 .accept-label {
   font-weight: 400;
