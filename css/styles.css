@@ -429,7 +429,6 @@ nav.container {
   transform: translateY(101%);
   transition: transform var(--time-cubic-bezier);
 }
-
 .portfolio-box-link-wrap {
   position: relative;
   overflow: hidden;
@@ -503,7 +502,6 @@ nav.container {
 .subscribe {
   margin-left: 93px;
 }
-
 .our-team-web {
   display: flex;
   gap: 10px;
@@ -586,10 +584,10 @@ nav.container {
   background: var(--brand-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: fill var(--time-cubic-bezier);
 }
 .close-button:hover {
   fill: var(--accent-color);
-  transition: fill var(--time-cubic-bezier);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.4);
@@ -614,6 +612,11 @@ nav.container {
 .input-wrap {
   position: relative;
 }
+.input-modal {
+  display: flex;
+  align-items: center;
+
+}
 .form-element svg {
   position: absolute;
   top: 50%;
@@ -629,6 +632,7 @@ nav.container {
   width: 100%;
   outline: none;
   cursor: pointer;
+  transition: border-color var(--time-cubic-bezier);
 }
 .footer-input {
   width: 358px;
@@ -661,9 +665,13 @@ nav.container {
   display: flex;
   text-align: center;
   align-items: center;
-  gap:10.54px;
+  gap: 10.54px;
   justify-content: center;
   cursor: pointer;
+  transition: background-color var(--time-cubic-bezier);
+}
+.subscribe-btn:focus {
+  background: var(--active-color);
 }
 .submit-btn {
   border: none;
@@ -681,17 +689,19 @@ nav.container {
   line-height: 1.9;
   letter-spacing: 0.06em;
   display: flex;
-  justify-content:center;
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: background-color var(--time-cubic-bezier);
 }
 .submit-btn:focus {
   background: var(--active-color);
+  transition: background-color var(--time-cubic-bezier);
 }
 .footer-form {
   display: flex;
-  gap:12px;
+  gap: 12px;
 }
 .form-element input:focus {
   border: 1px solid var(--accent-color);
@@ -706,11 +716,13 @@ nav.container {
   color: var(--brand-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 .contract {
   color: var(--accent-color);
   text-decoration-line: underline;
+  text-decoration: none;
+  text-decoration: underline;
 }
 textarea {
   border: none;
@@ -724,6 +736,7 @@ textarea {
   cursor: pointer;
   outline: none;
   margin-bottom: 20px;
+  transition: border-color var(--time-cubic-bezier);
 }
 textarea:focus {
   border: 1px solid var(--accent-color);
@@ -742,46 +755,33 @@ textarea:focus {
 .accept-label {
   font-weight: 400;
   line-height: 1.71;
-}     
+}
 .textarea-field {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--textarea-text-color);
-} 
-/* .check {
-  padding-left: 36.38px;
-
-} */
+}
 .check-input {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-/* .check-box {
-  position: absolute;
-  margin-left:-24.38px;
-  fill: var(--second-black-color);
-} */
-
-
 .accept {
   display: flex;
   align-items: center;
-  
 }
-
-
 .checkbox {
   border: 2px solid var(--second-black-color);
   width: 16px;
   height: 15px;
-  border-radius:2px;
+  border-radius: 2px;
   display: flex;
   align-items: center;
   margin-right: 8.38px;
   margin-left: 12px;
+  transition: border-color var(--time-cubic-bezier);
 }
 .icon-check {
   fill: var(--brand-color);
@@ -792,7 +792,9 @@ textarea:focus {
   display: flex;
   justify-content: center;
 }
+.accept input:focus + label .checkbox {
+  border-color: var(--accent-color);
+}
 .checkbox-label {
   display: flex;
 }
-
